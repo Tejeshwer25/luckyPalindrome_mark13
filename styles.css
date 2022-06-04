@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Monda&family=Sarala&display=swap");
+
+:root {
+  --headingFont: "Monda", sans-serif;
+  --textFont: "Sarala", sans-serif;
+
+  --darkPink: #591919;
+  --lightPink: #d94a4a;
+  --veryLightPink: #79baf2;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--textFont);
+  text-align: center;
+
+  padding: 3rem 0rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--headingFont);
+  font-size: 2.5rem;
+
+  color: var(--darkPink);
+}
+
+main > form {
+  margin: 3rem 0rem;
+}
+
+main > form > label {
+  display: block;
+  margin: 1.5rem 0rem;
+}
+
+main > form > label > p {
+  width: max-content;
+  margin: auto;
+  font-size: 1.25rem;
+
+  color: var(--darkPink);
+}
+
+main > form > label > input {
+  padding: 0.5rem;
+  border: none;
+
+  border-bottom: 1px solid var(--lightPink);
+  background: transparent;
+
+  font-size: 1.25rem;
+  color: var(--lightPink);
+}
+main > form > label > input:focus {
+  outline: 1px solid var(--darkPink);
+}
+
+button {
+  font-family: var(--headingFont);
+  font-size: 1.25rem;
+
+  background-color: var(--darkPink);
+  color: var(--veryLightPink);
+  border: 2px solid transparent;
+
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 2rem 0rem;
+
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  border: 2px solid var(--darkPink);
+  background-color: transparent;
+  color: var(--darkPink);
+}
+
+#result > p {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+
+  background-color: var(--darkPink);
+  color: var(--veryLightPink);
+
+  padding: 1.5rem 0rem;
+}
+
+footer a {
+  color: var(--veryLightPink);
+}
+footer a:hover {
+  color: white;
+}

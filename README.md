@@ -1,4 +1,4 @@
-# luckyPalindrome_mark13
+# Mark-13: Palindrome Birthday
  Checks if your birthdate is palindrome in nature or not
 
 ## Live Project

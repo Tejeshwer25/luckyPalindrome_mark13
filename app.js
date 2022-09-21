@@ -20,12 +20,12 @@ function checkPalindrome(e) {
   const month = dateArray[1];
   const year = dateArray[0];
 
-  checkFormat("dd-mm-yyyy", day + month + year);
-  checkFormat("mm-dd-yyyy", month + day + year);
-  checkFormat("mm-dd-yy", month + day + year.slice(2));
+  checkFormatForPalindrome("dd-mm-yyyy", day + month + year);
+  checkFormatForPalindrome("mm-dd-yyyy", month + day + year);
+  checkFormatForPalindrome("mm-dd-yy", month + day + year.slice(2));
 }
 
-function checkFormat(format, date) {
+function checkFormatForPalindrome(format, date) {
   console.log(date);
 
   let start = 0;
